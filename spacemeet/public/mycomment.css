@@ -1,0 +1,411 @@
+.commentContainer {
+  overflow: scroll;
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentBox {
+  margin: 20px;
+  background-color: white;
+  width: 60%;
+  height: 280px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.commentText {
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.commentActivity {
+  width: 30%;
+  height: auto;
+  background-color: rgb(189, 189, 189);
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#commentuserImg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 3%;
+  margin-top: 2.5%;
+}
+
+#commentImg {
+  width: 100px;
+  height: 100px;
+
+  margin-left: 3%;
+}
+
+.link-top {
+  width: 100%;
+  height: 1px;
+  border-top: solid #cacaca 1px;
+  margin: 0 auto;
+}
+
+.commenTitle-1 {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#commentName {
+  font-size: 25px;
+}
+
+#starRating {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+#commentOpinion {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+.commenTitle-3 {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+
+}
+
+
+#comment_date{
+  float: right;
+}
+
+.commenTitle-2 {
+  /* background-color: rgb(128, 126, 129); */
+  width: 100%;
+  height: 50%;
+}
+
+#commentActivityimg {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-top: 2%;
+}
+
+#commentActivityname {
+  margin-top: 12%;
+}
+
+.commentActivity a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 好友評價 */
+
+#frcommentImg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 3%;
+}
+
+#frcommentName {
+  font-size: 25px;
+}
+
+#frstarRating {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+#frcommentOpinion {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+#frcommentActivityimg {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-top: 2%;
+}
+
+#commentActivityname {
+  margin-top: 12%;
+}
+
+#frcommentActivityname {
+  margin-top: 12%;
+}
+
+/* 待評價 */
+
+.waitcommentBox {
+  margin: 20px;
+  background-color: white;
+  width: 60%;
+  height: 280px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.waitcommenTitle-1 {
+  /* background-color: rgb(192, 180, 204); */
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+
+.waitcommenTitle-2 {
+  /* background-color: rgb(128, 126, 129); */
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+
+.waitcommenTitle-3 {
+  /* background-color: rgb(111, 21, 156); */
+  width: 20%;
+  height: 8%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 78%;
+}
+
+.waitcommentText {
+  width: 100%;
+  height: 100%;
+  /* background-color: bisque; */
+  border-radius: 8px 0px 0px 8px;
+}
+
+.waitcommen-4 {
+  display: flex;
+  width: 36%;
+  /* background-color: cadetblue; */
+}
+
+.waitcommen-5 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* background-color: rgb(0, 71, 73); */
+  flex-wrap: wrap;
+  font-size: 2.5vh;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.commeningTitle-1 {
+  /* background-color: rgb(98, 56, 139); */
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+
+/* 點擊評價後 */
+
+.commentform {
+  margin: 20px;
+  background-color: white;
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px ;
+}
+
+.commentformtitle {
+  display: flex;
+  width: 100%;
+  height: 35%;
+  /* background-color: rgb(88, 112, 112); */
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+.commentformtitle img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.commentformstar {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  /* background-color: rgb(4, 26, 26); */
+}
+.commentformtext {
+  display: flex;
+  justify-content:flex-start;
+  width: 100%;
+  height: 70%;
+  /* background-color: rgb(195, 255, 255); */
+}
+.commentformbt {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: flex-end;
+  /* background-color: rgb(160, 160, 160); */
+}
+
+.commentformbt button{
+  width: 20%;
+  height: 70%;
+}
+
+
+/* 待評論星星 */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.o-container {
+  width: 100%;
+  /* background-color: #b83a3a; */
+  /* margin-left: auto;
+    margin-right: auto; */
+  /* padding: 20px; */
+}
+
+
+.c-box {
+  /* margin: 50px 0; */
+  /* padding: 10px 10px; */
+  border: 1px solid #eee;
+  /* background: #cc0707; */
+}
+
+.c-box__body {
+  /* vertical-align: top; */
+  display: inline-block;
+  /* color: #888; */
+}
+
+/* Rating Star Widgets Style */
+.c-rating-star {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+.c-rating-star__item {
+  display: inline-block;
+}
+
+/* Idle State of the stars */
+.c-rating-star__icon {
+  font-size: 30px;
+  /* Change the size of the stars */
+  color: rgb(199, 199, 199);
+  /* Color on idle state */
+ 
+}
+
+/* Hover state of the stars */
+.c-rating-star__item.is-hover > .c-rating-star__icon {
+  color: #ffcc36;
+}
+
+/* Selected state of the stars */
+.c-rating-star__item.is-selected > .c-rating-star__icon {
+  color: #ffcc36;
+}
+
+/* 評論圖片 */
+/* section {
+  width: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 3.5em .75em;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fff;
+} */
+
+.btn {
+  text-align: center;
+  padding: 0.5em 0.75em;
+  background: #3fbf7f;
+  background: linear-gradient(to right, #1cceb0, #3fbf7f);
+  border: none;
+  font-weight: 300;
+  font-size: 1.25em;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 500ms;
+}
+
+#filePicker {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.fileName {
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.preview {
+  width: 5vw;
+  height: 10vh;
+  background: #ffffff;
+  border-radius: 10%;
+  margin: 0 auto ;
+  overflow: hidden;
+  border: 6px solid #e0e0e0;
+}
+
+
+
+.preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.loadingLogo {
+  width: 70px;
+  height: 70px;
+  border: 5px solid #000000;
+  border-top: 5px solid #000000;
+  border-radius: 10%;
+  animation: spin 500ms linear infinite;
+}

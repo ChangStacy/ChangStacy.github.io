@@ -1,0 +1,131 @@
+.privatePhotobox {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.photo-frame {
+    height: 17.8vh;
+    width: 15vw;
+    /* border: 5px solid rgb(0, 0, 0); */
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.photo-frame .photo img {
+    border: 3px solid white;
+    width: 100%;
+    height: 100%;
+    object-position: right bottom;
+    cursor: pointer;
+    transition:all .2s ease-in-out;
+-webkit-transition:all .2s ease-in-out;
+-moz-transition:all .2s ease-in-out;
+-ms-transition:all .2s ease-in-out;
+-o-transition:all .2s ease-in-out;
+}
+
+
+.photo-frame .photo:hover img 
+{
+transform:scale(0.9);
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9)
+}
+
+.photoOverlay {
+    position: absolute;
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.photoPopup {
+    width: 50%;
+    height: 80%;
+    overflow: scroll;
+    background-color: #fefeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 5%;
+    /* position: absolute; */
+    text-align: center;
+    /* overflow: scroll; */
+    border-radius: 20px;
+}
+
+.closePhotoIcon {
+    cursor: pointer;
+    margin-left: 95%;
+    margin-top: 2%;
+}
+
+.myPhoto img {
+    width: 90%;
+    height: 100%;
+    margin-top: 0.5%;
+}
+
+.photoideaBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: rgb(155, 151, 151); */
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.ideaborderbox {
+    display: flex;
+    width: 25vw;
+    height: 40vh;
+    background-color: #fefeff;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    justify-content: flex-start;
+    /* position: relative; */
+}
+
+.ideaborderbox span {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.activityadddate {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}

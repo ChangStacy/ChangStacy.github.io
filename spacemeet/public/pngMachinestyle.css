@@ -1,0 +1,342 @@
+/*hidden scroll  (chrome ie firebox)*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+
+  
+
+
+
+
+   
+}
+
+
+@keyframes RollImg1 {
+    0% {
+        background-position: -6008px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes RollImg2 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -6008px 0;
+    }
+}
+
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+
+/*-----------------------------------*/
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    background-image:url(./images/IMG_6162.JPG);
+    animation: RollImg1 linear 120s infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#star {
+    width: 100%;
+    height: 100%;
+    background-image:url(/images/IMG_6163.PNG);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: RollImg2 linear 60s infinite;
+    position: absolute;
+}
+
+.mainbackImg {
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    width: 85%;
+    height: 80%;
+    /* background-image: url(/images/S__56426498.png); */
+    background-size: contain;
+    margin-top: 1.5%;
+   
+
+ 
+
+  
+   
+}
+
+.mainbackImg img {
+    width: 100%;
+    height: auto;
+    position: relative;    
+
+}
+
+.backBox {
+    /* background-color: rgb(194, 238, 208); */
+    width: 69vw;
+    height: 70vh;
+    display: flex;
+    top: 24%;
+    right: 1%;
+    position: relative;
+    flex-direction: row;
+    
+   
+    
+}
+
+.mainPagebtn {
+    /* background-color: burlywood; */
+    width:25%;
+  
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 84.5%;
+    left: 60%;
+    transform:rotate(-2deg);
+  
+}
+
+
+
+.publicmainPagebtn {
+    /* background-color: burlywood; */
+    width:25%;
+  
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 84.5%;
+    left: 60%;
+    transform:rotate(-2deg);
+}
+
+
+
+.pageBtn {
+    position: relative;
+    /* padding-top: 10px;
+      padding-left: 0px; */
+    margin-left: 50px;
+    margin-bottom: 30px;
+    top: 10px;
+    background-color:  #919191;
+    border: 6px solid#ffffff;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 7vh;
+    height: 7vh;
+    font-size: 3vh;
+  }
+
+
+.tabandIcon {
+    /* background-color: rgb(137, 127, 161); */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+   
+}
+
+#mainTab {
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+    /* margin-top: 15px; */
+    /* margin-left: 10px; */
+    margin: 0 auto;
+    /* background-color: blue; */
+  top: 2%;
+    /* border: 10px groove #bebebe; */
+    /* background-color: #c73838; */
+    border-radius: 25px;
+    overflow: scroll;
+   clip-path: polygon(4% 11%, 8% 9%, 10% 8%, 14% 7%, 19% 6%, 22% 5%, 28% 4%, 39% 2%, 46% 2%, 61% 2%, 69% 2%, 84% 3%, 87% 3%, 94% 5%, 98% 10%, 100% 21%, 100% 35%, 99% 51%, 99% 61%, 99% 72%, 99% 81%, 97% 92%, 93% 95%, 87% 97%, 83% 97%, 82% 97%, 68% 98%, 56% 98%, 47% 98%, 31% 98%, 25% 98%, 19% 98%, 13% 98%, 11% 97%, 7% 96%, 4% 91%, 3% 84%, 2% 75%, 2% 65%, 4% 64%, 4% 58%, 4% 55%, 3% 52%, 3% 46%, 3% 43%, 0 43%, 0 38%, 0% 33%, 0 23%, 1% 16%, 3% 13%);
+}
+
+
+/* #mainIcon {
+    background-color: rgb(233, 255, 196);
+    height: 18%;
+    width: 98.1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+} */
+
+
+/* .mainIconcss {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 0px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    top: 20px;
+    text-align: center;
+    background-color: #536150d2;
+    border: 5px solid #568b49;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 55px;
+    height: 50px;
+    font-size: 40px;
+} */
+
+
+/* -----mainTab -----*/
+
+/* #mainTab ul {
+
+} */
+
+.clearfloat {
+    zoom: 1;
+}
+
+.clearfloat::after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.tab-list {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 170px;
+    padding: 0;
+}
+
+.tab-list .tab-itom {
+    float: left;
+    list-style: none;
+    margin-right: 4px;
+}
+
+.tab-itom .test-label {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 27px;
+    text-align: center;
+    /* background: #818181; */
+    top: 40px;
+    left: -45px;
+}
+
+.tab-itom .tab-box {
+    /* 設定絕對定位方便定位相對於tab-list欄的位置，同時為了可以使用z-index屬性 */
+    position: absolute;
+    left: -45px;
+   
+    width: 55vw;
+    height: auto;
+    top: 10px;
+/* 
+    border: 10px groove #bebebe; */
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    /* background-color:#818181; */
+    /* 設定層級最低方便選中狀態遮擋 */
+    z-index: -1;
+    /* clip-path: polygon(11% 6%, 19% 4%, 31% 2%, 40% 1%, 52% 1%, 61% 1%, 70% 1%, 78% 1%, 85% 2%, 93% 3%, 97% 7%, 100% 18%, 100% 42%, 99% 52%, 99% 63%, 99% 69%, 98% 80%, 97% 89%, 95% 94%, 91% 97%, 85% 99%, 77% 99%, 70% 99%, 58% 99%, 44% 99%, 29% 99%, 21% 99%, 12% 99%, 7% 97%, 5% 94%, 4% 88%, 3% 83%, 2% 73%, 2% 70%, 3% 67%, 4% 66%, 5% 63%, 4% 58%, 4% 55%, 4% 50%, 4% 46%, 4% 42%, 2% 40%, 0 39%, 0 37%, 0 30%, 1% 15%, 3% 10%, 5% 9%); */
+ 
+}
+
+
+/* 用絕對定位使按鈕脫離文件流，透明度設定為0將其隱藏 */
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+
+/* 利用選擇器實現  tab切換 */
+
+
+/* 當radio為選中狀態時設定它的test-label兄弟元素的屬性 */
+
+input[type="radio"]:checked+.test-label {
+    /* 為了修飾存在的邊框背景屬性 */
+    /* border-top: 10px groove #bebebe;
+    border-left: 10px groove #bebebe;
+    border-right: 10px groove #bebebe; */
+    /* border-bottom: 10px #838383;
+    background: #838383;  */
+    left: -45px;
+    /* 為了修飾存在的層級使下邊框遮擋下方div的上邊框 */
+    z-index: 1;
+    top: 40px;
+}
+
+
+/* 當radio為選中狀態時設定與它同級的tab-box元素的顯示層級 */
+
+input[type="radio"]:checked~.tab-box {
+    /* 選中時提升層級，遮擋其他tab頁達到選中切換的效果 */
+    z-index: 0;
+}
+
+
+/* li {
+overflow: auto;
+} */
+
+.test-label {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.tab-box {
+    overflow: scroll;
+}
+
+
+

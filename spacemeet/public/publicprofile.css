@@ -1,0 +1,1679 @@
+body {
+  font-family: Arial, "Microsoft JhengHei";
+}
+
+.publicTop {
+  width: 70vw;
+  height: 62vh;
+  position: relative;
+
+  /* background-color: black; */
+}
+
+button {
+  cursor: none;
+}
+
+.publicBottom {
+  width: 95.5%;
+  height: 10vh;
+  /* background-color: rgb(206, 74, 74); */
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+
+ 
+}
+
+.publicprofileBox {
+  width: 70vw;
+  height: 60vh;
+  position: relative;
+  /* margin-top: 15px; */
+  /* margin-left: 10px; */
+  margin: 0 auto;
+  margin-top: 1%;
+
+  /* border: 10px groove #bebebe; */
+  /* background-color: #c73838; */
+  border-radius: 25px;
+  overflow: scroll;
+  clip-path: polygon(4% 11%, 8% 9%, 10% 8%, 14% 7%, 19% 6%, 22% 5%, 28% 4%, 39% 2%, 46% 2%, 61% 2%, 69% 2%, 84% 3%, 87% 3%, 94% 5%, 98% 10%, 100% 21%, 100% 35%, 99% 51%, 99% 61%, 99% 72%, 99% 81%, 97% 92%, 93% 95%, 87% 97%, 83% 97%, 82% 97%, 68% 98%, 56% 98%, 47% 98%, 31% 98%, 25% 98%, 19% 98%, 13% 98%, 11% 97%, 7% 96%, 4% 91%, 3% 84%, 2% 75%, 2% 65%, 4% 64%, 4% 58%, 4% 55%, 3% 52%, 3% 46%, 3% 43%, 0 43%, 0 38%, 0% 33%, 0 23%, 1% 16%, 3% 13%);
+}
+
+.tabandIcon {
+  /* background-color: rgb(137, 127, 161); */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#blockButton {
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: black;
+  border: 5px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  width: 12vh;
+  height: 4vh;
+  background-color: #dadada;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+#addButton {
+  font-size: 3vh;
+  text-decoration: none;
+  color: black;
+  border: 5px solid rgb(78, 78, 78);
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+  margin: 10px 10px;
+}
+
+#focusButton {
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: black;
+  border: 5px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  background-color: #dadada;
+  text-align: center;
+  width: 12vh;
+  height: 4vh;
+  margin: 10px 10px;
+}
+
+/* 個人檔案 */
+
+/* --------個人檔案-------- */
+
+/* 個人檔案頁籤大區塊 */
+
+.userinfoBox {
+  overflow: scroll;
+  width: 100%;
+  height:auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  /* margin-top: 10%; */
+}
+
+/* 個人資訊區塊  */
+
+.userinfoTitle {
+  /* background-color: blue; */
+  width: 70%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+  margin-top: 3%;
+}
+
+/* 大頭貼區塊  */
+
+.titleTop {
+   /* background-color: rgb(255, 115, 255); */
+   width: 30%;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   /*水平置中*/
+   align-items: center;
+   /*垂直置中*/
+}
+
+/* 生日興趣職業星座大區塊  */
+
+.titleRight {
+  background: linear-gradient(#141e30, #243b55);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 20px;
+  width: 50.5%;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+}
+
+/*  感興趣活動區塊  */
+
+.activityLike {
+  background: linear-gradient(#141e30, #243b55);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 20px;
+  width: 53.5%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+  margin-left: 4%;
+}
+
+/* 自我介紹區塊  */
+
+.selfintroduction {
+  background: linear-gradient(#141e30, #243b55);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 20px;
+  width: 53%;
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+margin-top: 2%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+/* 自我介紹框框  */
+
+.selfintroductionBox {
+  background-color: #243b55;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+/* 自我介紹標題樣式  */
+
+.selfTitle {
+  color: rgb(255, 255, 255);
+  /* background-color: aqua; */
+}
+
+/* 自我介紹內文  */
+
+#publicUserselfintroduction {
+  margin-top: 40px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+/* 感興趣活動框框  */
+
+.activitylikeBox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 1%;
+}
+
+/*  感興趣活動icon樣式  */
+
+.interestIcon {
+  background-color: #243b55;
+
+  width: 200px;
+  height: 100px;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+}
+
+/* 感興趣活動的icon樣式 */
+
+.iconify {
+  width: 90px;
+  height: 70px;
+  color: white;
+}
+
+/*  感興趣活動 內容 區塊  */
+
+.interestContent {
+  background-color: #243b55;
+ width:500px;
+  height: 100px;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+  flex-direction: column;
+}
+
+/*  感興趣活動文字標題樣式  */
+
+.interTitle {
+  color: rgb(255, 255, 255);
+  align-self: flex-start;
+}
+
+/* 感興趣活動標籤  */
+
+.useractivityLike {
+  align-self: flex-start;
+}
+
+.useractivityLike span {
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+/* #tabb span {
+ color: rgb(255, 163, 163);
+ flex-wrap: wrap;
+ background-color: #ff0000;
+} */
+
+/* 大頭貼內區塊  */
+
+.titletopInside {
+  background-color: #243b55;
+  border: 5px  solid linear-gradient(#141e30, #243b55);
+  border-radius: 20px;
+  width: 180px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* 會員頭貼 */
+
+#publicUserimage {
+/* background-color: #141e30; */
+width: 150px;
+height: 150px;
+margin: 0 auto;
+}
+
+#publicUserimage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin-top: 3%;
+border: 2px solid white;
+}
+
+/* 大頭貼div */
+
+.titleBottom {
+   /* background-color: rgb(145, 145, 255); */
+   height: 80px;
+   width: 150px;
+   text-align: center;
+  
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+/* 暱稱與性別icon區塊 */
+
+#publicNamegender {
+   /* background-color: saqua; */
+   font-size: 20px;
+   color: #ffffff;
+   position: relative;
+}
+
+/* 會員id */
+
+#publicUserid {
+  color: darkgray;
+}
+
+/* 性別ico樣式 */
+
+#genderItem {
+  width: 20px;
+  height: 20px;
+  /* background-color: rgb(255, 152, 17); */
+}
+
+/* 地區 */
+
+#publicUseradd {
+  color: #ffffff;
+}
+
+/* 年齡 */
+
+#publicUserage {
+  color: #ffffff;
+}
+
+/* 生日 */
+
+.titlerightBox {
+  width: 450px;
+  height: 200px;
+  /* background-color: black; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*水平置中*/
+  flex-direction: column;
+}
+
+/* 生日興趣職業星座框框橫向1區塊 */
+
+.rightBoxone {
+  background-color:  #243b55;
+  height: 100px;
+  border-radius: 14px 14px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ color: #ffffff;
+}
+
+/* 生日區塊  */
+
+.birthBox {
+  background-color: #243b55;
+  border-radius: 14px 0px 0px 0px;
+  width: 133.3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+/* 生日區塊文字 */
+
+span {
+  text-align: center;
+}
+
+/* 星座區塊  */
+
+.zodiacBox {
+  background-color: #243b55;
+  border-radius: 0px 0px 0px 0px;
+  width: 133.3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+/* 職業區塊 */
+
+.jobBox {
+  background-color: #243b55;
+  border-radius: 0px 14px 0px 0px;
+  width: 133.3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 生日興趣職業星座框框橫向2區塊 */
+
+.rightBoxtwo {
+  background-color: #243b55;
+  height: 100px;
+  border-radius: 0px 0px 14px 14px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+
+
+
+/* 會員生日 */
+
+#publicUserbirth {
+  color: #ffffff;
+}
+
+/* 會員星座 */
+
+#publicUserzodiac {
+  color: #ffffff;
+}
+
+/* 會員職業 */
+
+#publicUserjob {
+  color: #ffffff;
+}
+
+/* 會員興趣 */
+
+#publicUserinterest {
+  color: #ffffff;
+}
+
+/* 個人資料 評價.活動.相簿表頭 */
+
+.publiccommentTop {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: #deff20; */
+}
+
+.publiccommentTop i {
+  font-size: 4vh;
+  margin: 5px 5px;
+}
+
+.publiccommentMiddle {
+  width: 100%;
+  height: 54%;
+  background-color: #799272;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#onlineTime {
+  font-size: 14px;
+  color: darkgray;
+}
+
+/* 框框 */
+
+.publiccommentbottom {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  /* justify-content: flex-start; */
+}
+
+.publicBox {
+  width: 70%;
+  height: 100%;
+  /* background-color: rgb(165, 45, 45); */
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  /* align-items: center; */
+  /* margin: 0 auto;
+    padding-top: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* star */
+
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400); */
+
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.container {
+  width: 400px;
+  margin: 0 auto;
+  /* background-color: #c50000; */
+  padding: 4px;
+}
+
+.inner {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(126, 126, 126); */
+  /* border: 2px solid black; */
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.rating {
+  margin-top: 20px;
+  width: 45%;
+  text-align: center;
+  /* background-color: #8bdb23; */
+}
+
+.rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.rating-stars {
+  font-size: 20px;
+  color: #e3e3e3;
+  margin-bottom: 0.5em;
+}
+
+.rating-stars .active {
+  color: #ffda33;
+}
+
+.rating-stars .noactive {
+  color: #b9b9b9;
+}
+
+.rating-users {
+  font-size: 14px;
+}
+
+.histo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 13px;
+  /* background-color: #ffa9a9; */
+  padding: 20px;
+}
+
+.histo-star {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 3px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.histo-rate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  clear: both;
+}
+
+/* .bar-block {
+    
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+    background-color: rgb(167, 167, 167);
+} */
+
+.bar {
+  padding: 4px;
+  display: block;
+}
+
+#bar-five {
+  width: 100%;
+  background-color: #9fc05a;
+  margin-bottom: 5px;
+}
+
+#bar-four {
+  width: 35%;
+  background-color: #add633;
+  margin-bottom: 5px;
+}
+
+#bar-three {
+  width: 20%;
+  background-color: #ffd834;
+  margin-bottom: 5px;
+}
+
+#bar-two {
+  width: 15%;
+  background-color: #ffb234;
+  margin-bottom: 5px;
+}
+
+#bar-one {
+  width: 30%;
+  background-color: #ff8b5a;
+  margin-bottom: 5px;
+}
+
+/* commentbox */
+
+.feedBack {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentBox {
+  margin: 20px;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.commentText {
+  width: 80%;
+  height: auto;
+  /* background-color: bisque; */
+  border-radius: 8px 0px 0px 8px;
+}
+
+.commentActivity {
+  width: 30%;
+  height: auto;
+  /* background-color: rgb(189, 189, 189); */
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#commentImg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 3%;
+}
+
+.link-top {
+  width: 95%;
+  height: 1px;
+  border-top: solid #cacaca 1px;
+  margin: 0 auto;
+}
+
+.commenTitle-1 {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#commentName {
+  font-size: 25px;
+}
+
+#starRating {
+  margin-left: 2.5%;
+  margin-top: 1%;
+  /* color: #860000; */
+}
+
+#starRating .active {
+  color: #ffda33;
+}
+
+#starRating .noactive {
+  color: #b9b9b9;
+}
+
+#commentOpinion {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+.commenTitle-3 {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.commenTitle-2 {
+  /* background-color: rgb(128, 126, 129); */
+  width: 100%;
+  height: 50%;
+}
+
+#commentActivityimg {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-top: 2%;
+}
+
+#commentActivityname {
+  margin-top: 12%;
+}
+
+.commentActivity a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 活動 */
+
+.Activitydiv {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  margin: 20px 0px;
+  position: relative;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.activitydivTitle {
+  /* background-color: cadetblue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.activityTitleleft {
+  /* background-color: darkgoldenrod; */
+  width: 35%;
+  height: 100%;
+  display: flex;
+}
+
+.activityTitleright {
+  /* background-color: rgb(73, 52, 0); */
+  width: 60%;
+  height: 100%;
+}
+
+#myloveactivityimg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#myloveactivityName {
+  font-size: 2vh;
+  font-weight: bold;
+  color: #000000;
+}
+
+#myloveactivityAdd {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+}
+
+#myloveactivitydate {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+}
+
+.ContentBox {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 8%; */
+  margin-top: 5%;
+  /* background-color: #333333; */
+}
+
+.ContentBox a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#hostImg {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 7vh;
+  height: 7vh;
+}
+
+#hostName {
+  font-size: 2vh;
+}
+
+.link-top {
+  width: 95%;
+  height: 1px;
+  border-top: solid #cacaca 1px;
+  margin: 0px auto;
+}
+
+/* 活動彈出 */
+
+#publicfade {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 53.5%;
+  background-color: rgb(65, 65, 65);
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  padding: 16px;
+  filter: alpha(opacity=80);
+}
+
+#publiclight {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 13%;
+  width: 70%;
+  height: 53.5%;
+  padding: 16px;
+
+  background-color: white;
+  z-index: 1002;
+  overflow: scroll;
+}
+
+.item {
+  color: #2b2b2b;
+  float: right;
+}
+
+/* 相簿 */
+.publicBox2 {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(165, 45, 45); */
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  /* align-items: center; */
+  /* margin: 0 auto;
+    padding-top: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.publicphotoBox {
+  overflow: scroll;
+  width: 100%;
+  height:100%;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  justify-content: flex-start;
+}
+
+#tab-photo {
+  width:100%;
+  margin: 0 auto;
+
+  /* background-color: #ff0000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.phototab-header {
+  display: flex;
+  /* background-color: #FF8B5A; */
+  margin: 0;
+  padding: 0;
+}
+
+.phototab-header li {
+  flex: 1;
+  list-style: none;
+  background: #333;
+}
+
+.phototab-header li.active {
+  background: #76e06e;
+  color: #fff;
+}
+
+.phototab-header li a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  /* padding: 10px 0; */
+}
+
+.phototab-header li a:hover {
+  cursor: pointer;
+  background: #76e06e;
+  color: #fff;
+  border: none;
+}
+
+.phototab-content .bg {
+  width: 100%;
+  height: 100%;
+  display: none;
+  /* background-color: #FF8B5A; */
+}
+
+/* .bg.bg-1 {
+  background-color: #db1212;
+}
+
+.bg.bg-2 {
+  background-color: #c22727;
+}
+
+.bg.bg-3 {
+  background-color: #ffffff;
+} */
+
+.bg.active {
+  display: block;
+}
+
+.privatePhotobox {
+  /* overflow: scroll; */
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.photo-album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-frame {
+  height: 17.8vh;
+  width: 15vw;
+
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  margin: 10px 10px;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-frame .photo img {
+  border: 3px solid white;
+  width: 100%;
+  height: 100%;
+  object-position: right bottom;
+  cursor: pointer;
+  transition:all .2s ease-in-out;
+-webkit-transition:all .2s ease-in-out;
+-moz-transition:all .2s ease-in-out;
+-ms-transition:all .2s ease-in-out;
+-o-transition:all .2s ease-in-out;
+
+
+ 
+}
+
+.photo-frame .photo:hover img {
+
+  transform:scale(0.9);
+  -webkit-transform:scale(0.9);
+  -moz-transform:scale(0.9);
+  -ms-transform:scale(0.9);
+  -o-transform:scale(0.9)
+
+  
+
+}
+
+
+
+.photoOverlay {
+  position: absolute;
+  display: none;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  z-index: 2;
+  width: 100%;
+  height: 57vh;
+  display: flex;
+  /* justify-content: center; */
+  top: 20px;
+  /* overflow: auto; */
+}
+
+.photoPopup_Content {
+  position: relative;
+  /* background-color: #19d1e7; */
+  width: 100%;
+  height: 100%;
+}
+
+.photoPopup {
+  width: 50%;
+  height: 80%;
+  overflow: scroll;
+  border: 15px ridge #141e30;
+  background:  #243b55;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+ margin-top: 2.5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.closePhotoIcon {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 25px;
+  color: white;
+}
+.closePhotoIcon2 {
+  position: absolute;
+  top: 4px;
+  right: 20%;
+  left: 65%;
+  cursor: pointer;
+  /* margin-left: auto;
+        margin-top: auto; */
+  font-size: 25px;
+  color: white;
+}
+
+.myPhoto{
+  width: 80%;
+  height: 80%;
+
+  
+
+}
+
+.myPhoto img {
+  width: 100%;
+  height: 100%;
+ border-radius: 10px ;
+}
+
+
+
+
+.photoideaBox {
+  width: 100%;
+  height: 100%;
+  /* max-height: 425px; */
+  display: flex;
+  /* background-color: #243b55; */
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.ideaborderbox {
+  display: flex;
+  width: 25vw;
+  height: 40vh;
+  background-color: #fefeff;
+  border-radius: 15px;
+  margin: 0px auto;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  justify-content: flex-start;
+  /* position: relative; */
+}
+
+.ideaborderbox span {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.activityadddate {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+
+
+/* 按鈕效果 */
+
+
+.page4container {
+  width:6vh;
+  height: 6vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+.page4container .expandButton, .page4container .page4btn1, .page4container .page4btn2, .page4container .page4btn3 {
+  width: 100%;
+  height: 100%;
+  background: #ff4878;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.page4container .expandButton {
+  z-index: 1;
+}
+
+.page4container .expandButton:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color:  #919191;
+   border: 6px solid#ffffff;
+   color: #ffffff;
+
+}
+.page4container .page4btn1, .page4container .page4btn2, .page4container .page4btn3 {
+  width: 100%;
+  height: 100%;
+  background: #19d1e7;
+}
+.page4container .page4btn1 p, .page4container .page4btn2 p, .page4container .page4btn3 p {
+  color: #000000;
+}
+.page4container .page4btn1 {
+  transition-delay: 0s;
+}
+.page4container .page4btn2 {
+  transition-delay: 0s;
+}
+.page4container .page4btn3 {
+  transition-delay: 0s;
+}
+.page4container i {
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+  /* margin: 0; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page4container p {
+  color: #fff;
+  font-size: 1.5vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    /* cursor: pointer; */
+}
+.page4container.isActive .expandButton {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.page4container.isActive .expandButton:before {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+.page4container.isActive .page4btn1 {
+  top: -20%;
+  left: -50%;
+  transition-delay: 0.1s;
+}
+.page4container.isActive .page4btn2 {
+  top: -75%;
+  left: 50%;
+  transition-delay: 0.2s;
+}
+.page4container.isActive .page4btn3 {
+  top: -20%;
+  left: 150%;
+  transition-delay: 0s;
+}
+
+
+
+
+/* 留言板 */
+
+/* 
+adapted from:
+- https://leaverou.github.io/bubbly/
+- https://alligator.io/css/styling-form-input-validity/
+*/
+
+/* speech bubble */
+.speech-bubble {
+	position: relative;
+	background: #243b55;
+	border-radius: .4em;
+  box-shadow: 0px 0px 18px #000000;
+  height: 21vh;
+  width: 50vw;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 70%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-right-color: #243b55;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -14px;
+	margin-left: -28px;
+}
+
+div.speech-bubble {
+  max-width: 600px;
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 50px;
+  text-shadow: 0px 0px 10px #ffffff;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+  font-size: 15pt;
+}
+
+/* ---- error area */
+.speech-bubble-error {
+	position: relative;
+	background: #ff0000;
+	border-radius: .4em;
+  box-shadow: 0px 0px 18px #000000;
+}
+
+.speech-bubble-error:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 70%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-right-color: #ff0000;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -14px;
+	margin-left: -28px;
+}
+
+div.speech-bubble-error {
+  max-width: 420px;
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 50px;
+  text-shadow: 0px 0px 10px #ffffff;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+  font-size: 18pt;
+}
+
+/* others */
+/* input, textarea {
+  margin: 0 .25rem;
+  resize:vertical;
+  width: 95%;
+  max-width: 400px;
+  font-size: 18pt;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #000000;
+  border-left: 5px solid;
+  border-radius: 7px;
+} */
+
+.nick input {
+  font-size: 14pt;
+}
+
+.message textarea {
+  font-style: italic;
+}
+
+.speech-bubble p.nick {
+  font-size: 14pt;
+  text-shadow: 0px 0px 3px #ffffff;
+}
+
+.speech-bubble p.message {
+  font-style: italic;
+}
+
+.speech-bubble p.submit {
+  text-align: right;
+}
+
+.speech-bubble p.submit button.submit {
+  font-size: 16pt;
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFFFFF;
+	border-radius: .4em;
+	margin: 0;
+	padding: 10px;
+	border: 0;
+  box-shadow: 0px 0px 8px #ffffff;
+}
+
+.speech-bubble p.submit button.submit:hover {
+  box-shadow: 0px 0px 3px #ffffff;
+  cursor: pointer;
+}
+
+.speech-bubble p.submit button.submit:active {
+  box-shadow: 0px 0px 3px #fffcbb;
+  cursor: pointer;
+}
+
+.speech-bubble p.submit button.submit:disabled {
+  box-shadow: 0px 0px 3px #ffffff;
+  cursor: wait;
+}
+
+.speech-bubble p.nick input:disabled, .speech-bubble p.message textarea:disabled {
+  cursor: wait;
+}
+
+
+div.pageheader {
+  max-width: 500px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #000000, 0px 0px 10px #000000, 0px 0px 10px #000000;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+}
+
+div.pagesubheader {
+  max-width: 500px;
+  text-align: right;
+  text-shadow: 0px 0px 10px #00868B, 0px 0px 10px #000000, 0px 0px 10px #000000;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+}
+
+.deleteme{
+
+  width: 60px;
+  height: 20px;
+  border: #fff;
+cursor: pointer;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 2px #044f53, 0 0 2px #03e9f4, 0 0 2px#03e9f4, 0 0 2px#03e9f4;
+}
+
+
+#comment_date{
+ 
+  margin-left: 85%;
+}
+
+
+
+/* 留言板上方 */
+:root {
+  --near-black: #333333;
+  --dark-cyan: #008b8b;
+  --near-white: #f2f2f2;
+  --orange: #ffbf00;
+  --salmon: #fa8072;
+  --app-width: 1024px;
+}
+
+.app {
+
+  /* background-color: #5e8a8b; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-board {
+  flex: 0 0 70%;
+}
+
+.sidebar {
+  flex: 0 0 30%;
+}
+
+.mecontainer {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guest-list {
+  background-color: var(--salmon);
+  margin: 5px 10px;
+  padding: 25px 5px 5px 5px;
+}
+
+.guest-list-heading {
+  margin-bottom: 15px;
+}
+
+.guest-list-copy {
+  color: var(--near-white);
+}
+
+.heading {
+  margin-bottom: 25px;
+}
+
+.form {
+
+  position: relative;
+
+  border-radius: .4em;
+
+  max-width: 420px;
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 50px;
+  text-shadow: 0px 0px 10px #ffffff;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+  font-size: 18pt;
+  background: #243b55;
+  border-radius: .4em;
+  box-shadow: 0px 0px 18px #000000;
+}
+
+
+.form:after {
+
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 0;
+  height: 0;
+  border: 28px solid transparent;
+  border-right-color: #243b55;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -14px;
+  margin-left: -28px;
+}
+
+.input-username {
+  width: 250px;
+  margin: 25px 0px;
+}
+
+.input-message {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.mebutton {
+  width: 60px;
+  height: 20px;
+  border: #fff;
+cursor: pointer;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 2px #044f53, 0 0 2px #03e9f4, 0 0 2px#03e9f4, 0 0 2px#03e9f4;
+}
+
+.messages {
+  padding: 0px 15px;
+}
+
+.message-mecontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  padding: 10px;
+  position: relative;
+  background: #243b55;
+  border-radius: .4em;
+  box-shadow: 0px 0px 18px #000000;
+  height: 20vh;
+  width: 600px;
+
+  text-shadow: 0px 0px 10px #ffffff;
+
+  color: #FFFFFF;
+  font-size: 15pt;
+
+}
+
+.message-mecontainer:after {
+  /* display: flex;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #00868B;
+  padding: 10px; */
+
+
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 0;
+  height: 0;
+  border: 28px solid transparent;
+  border-right-color: #243b55;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -14px;
+  margin-left: -28px;
+}
+
+
+
+.message-body {
+  flex: 1 1;
+}
+
+.count {
+  background-color: orange;
+  padding: 5px;
+  margin: 4px 0px;
+}
+
+#commentuserImg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 3%;
+  margin-top: 2.5%;
+}
