@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/2d90292d26.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- 通訊器的css -->
+    <link rel="stylesheet" href="public/pngMachinestyle.css">
+    <!-- 個人檔案的css -->
+    <link rel="stylesheet" href="public/personalfilestyle.css">
+    <!-- 漢堡的css -->
+    <link rel="stylesheet" href="public/hambuger.css">
+
+    <!-- 我的評價的css -->
+    <link rel="stylesheet" href="public/mycomment.css">
+
+    <!-- 我的相簿的css -->
+    <link rel="stylesheet" href="public/activityphoto.css">
+
+    <!-- 個人資料編輯表單的css -->
+    <link rel="stylesheet" href="public/profileedit.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="public/profileedit.js">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <title>宇你相遇-會員專區</title>
+</head>
+
+
+<body>
+    <div id="star"></div>
+    <!-- hamburger -->
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fa-solid fa-house"></i></label>
+    <div class="wrapper">
+        <div id="animate-area">
+            <div id="star">
+                <button class="logoutBtn" v-on:click="logout">logout</button>
+                <a href="/login"><img id="login" onmouseover="this.src='public/images/IMG_6184.PNG'"
+                        onmouseout="this.src='public/images/IMG_6183.PNG'" src="public/images/IMG_6183.PNG" alt=" "></a>
+
+
+                <a href="/personalfile"><img id="members" onmouseover="this.src='public/images/IMG_6186.PNG'"
+                        onmouseout="this.src='public/images/IMG_6185.PNG'" src="public/images/IMG_6185.PNG" alt=" "></a>
+
+                <img id="logo" src="public/images/IMG_6204.GIF" alt=" ">
+
+                <a href="/aboutUs"><img id="aboutUs" onmouseover="this.src='public/images/IMG_6178.PNG'"
+                        onmouseout="this.src='public/images/IMG_6177.PNG'" src="public/images/IMG_6177.PNG" alt=" "></a>
+
+
+                <img onclick="jump()" id="active" onmouseover="this.src='public/images/IMG_6176.PNG'"
+                    onmouseout="this.src='public/images/IMG_6175.PNG'" src="public/images/IMG_6175.PNG" alt=" ">
+
+
+                <a href="pair.html"><img id="match" onmouseover="this.src='public/images/IMG_6171.PNG'"
+                        onmouseout="this.src='public/images/IMG_6189.PNG'" src="public/images/IMG_6189.PNG" alt=" "></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- background image -->
+
+    <div class="mainbackImg">
+        <img src="public/images/S__56426498.png"></img>
+
+    </div>
+    <div class="mainPagebtn">
+        <button id="myProfileBtn" class="pageBtn">
+            <i class="fa-solid fa-user   "></i>
+        </button>
+        <button id="myCommentBtn" class="pageBtn">
+            <i class="fa-solid fa-message"></i>
+        </button>
+        <button id="myPhotoBtn" class="pageBtn">
+            <i class="fa-solid fa-image "></i>
+        </button>
+    </div>
+
+
+    <div class="backBox">
+
+        <div class="tabandIcon" id="ShowPage1">
+            <!-- main Tab -->
+            <div id="mainTab">
+                <ul class="tab-list clearfloat">
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio8" class="test-radio" name="tab3" checked="checked">
+                        <label class="test-label" for="testTabRadio8" style="display: none;">個人檔案</label>
+                        <div class="tab-box">
+
+
+                            <div class="userinfoBox" id="userinfoPage1">
+
+
+                                <button id="editIcon">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+
+                                </button>
+
+
+                                <div class="userinfoTitle">
+                                    <div class="titleTop">
+
+                                        <!-- userimage&info -->
+                                        <div class="titletopInside">
+                                            <div id="userImage">
+                                                <img src="public/images/maymay.png" alt="">
+                                            </div>
+                                            <div class="titleBottom">
+                                                <div>
+                                                    <span id="nameGender">
+                                                        美美
+                                                    </span>
+                                                   
+                                                </div>
+
+                                                <div>
+                                                    <span id="userId">@user1</span>
+                                                </div>
+                                                <div> <span id="userAdd">
+                                                        台中市
+                                                    </span> <span id="userAge">
+                                                        19歲
+                                                    </span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- birth&interest -->
+                                    <div class="titleRight">
+                                        <div class="titlerightBox">
+                                            <div class="rightBoxone">
+                                                <div class=" birthBox">
+                                                    <span>生日</span>
+                                                    <br>
+                                                    <span id="userBirth">
+                                                        2002-07-27
+                                                    </span>
+                                                </div>
+                                                <div class="zodiacBox">
+                                                    <span>性別</span>
+                                                    <br>
+                                                    <span id="userZodiac">
+                                                        女性
+                                                    </span>
+                                                </div>
+                                                <div class="jobBox">
+                                                    <span>職業</span>
+                                                    <br>
+                                                    <span id="userJob">
+                                                        學生
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="rightBoxtwo">
+                                                <span>興趣</span>
+                                                <br>
+                                                <span id="userInterest">
+                                                    探索美食與料理、健身
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="activityLike">
+                                    <div class=" activitylikeBox">
+                                        <div id="interestIcon"><span class="iconify"
+                                                data-icon="ic:baseline-interests"></span>
+                                        </div>
+                                        <div class="interestContent">
+                                            <span class="interTitle">感興趣的活動</span>
+                                            <br>
+                                            <div id="useractivityLike">
+                                                <span>運動健身</span>
+                                                <span>唱歌派對</span>
+                                                <span>體驗學習</span>
+                                                <span>美容時尚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- selfintroduction -->
+                                <div class="selfintroduction">
+                                    <div class="selfintroductionBox">
+                                        <span id="selfTitle">自我介紹</span>
+                                        <article id="userSelfintroduction">
+                                            大家好!我是美美~希望能在這裡找到志同道合的朋友!!
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- 編輯頁面 -->
+                            <div class="editBox" id="userinfoPage2" style="display:none;">
+
+                                <div class="editTitle">
+                                    <h1>編輯個人資料</h1>
+                                </div>
+
+                                <form id="form" action="">
+                                    <input type="hidden" name="MemID" value="">
+                                    <div class="chooseImg">
+
+                                        <div class="profile-pic-div">
+                                          
+                                            <img src="public/images/maymay.png"  id="photo">
+                                            <input type="file" id="file">
+                                            <label for="file" id="uploadBtn">Choose Photo</label>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="editBox2">
+                                        <div>
+                                            <label>暱稱<span style="color: red;">*</span></label>
+                                        </div>
+                                        <div>
+                                            <input autocomplete="off" class="input" type="text" placeholder="請輸入您的暱稱"
+                                                name="NickName" value="美美">
+                                        </div>
+                                        <div>
+                                            <label>所在地區<span style="color: red;">*</span></label>
+
+                                        </div>
+                                        <div>
+                                         
+                                            <select id="myselect" name="CityId" value="">
+
+                                            </select>
+                                        </div>
+
+
+                                        <div><label>生日<span style="color: red;">*</span></label></div>
+
+                                        <div>
+
+                                            <input type="date" id="datepicker" value=""
+                                                name="Birthday">
+                                        </div>
+                                        <div><label>性別<span style="color: red;">*</span></label></div>
+                                        <div>
+                                            <select name="Gender" value="">
+                                                <option  value="F">男性</option>
+                                                <option  selected value="M">女性</option>
+
+                                            </select>
+                                        </div>
+
+
+
+
+                                        <div><label>職務<span style="color: red;">*</span></label> </div>
+                                        <div> <select name="Job" value="">
+                                                <option value="catering">餐旅業</option>
+                                                <option value="insurance">金融保險業</option>
+                                                <option value="manufacturing">製造業</option>
+                                                <option value="medical">醫療保健/醫學研究</option>
+                                                <option value="origin">農林漁牧業</option>
+                                                <option value="other">其他</option>
+                                                <option value="public">公共事業</option>
+                                                <option value="religion">宗教</option>
+                                                <option value="software">軟體業</option>
+                                                <option selected value="student">學生</option>
+                                                <option value="traffic">交通運輸業</option>
+
+                                            </select>
+                                        </div>
+
+
+                                        <div><label>興趣<span style="color: red;">*</span></label> </div>
+                                        <div><input type="text" placeholder="" name="Interest"
+                                                value="探索美食與料理、健身"></input>
+                                        </div>
+
+
+
+                                        <div><label>選擇感興趣的聚會<span style="color: red;">*</span></label></div>
+
+                                        <!-- 加上select表示預設 -->
+
+                                        <div><select id="likeTab" name="FavoriteActivity"
+                                                value="" multiple>
+                                                <option value="商業投資">商業投資</option>
+                                                <option value="命理諮商">命理諮商</option>
+                                                <option value="美容時尚">美容時尚</option>
+                                                <option value="美食美酒">美食美酒</option>
+                                                <option value="遊戲卡牌">遊戲卡牌</option>
+                                                <option value="體驗學習">體驗學習</option>
+                                                <option value="影音展演">影音展演</option>
+                                                <option value="其他">其他</option>
+                                                <option value="旅行出遊">旅行出遊</option>
+                                                <option value="運動健身">運動健身</option>
+                                            </select></div>
+
+                                        <div><label>自我介紹<span style="color: red;">*</span></label> </div>
+                                        <div><input type="text" placeholder="請填寫自我介紹" name="Introduction"
+                                                value=" 大家好!我是美美~希望能在這裡找到志同道合的朋友!!" style="width: 400px;height: 300px;">
+                                            </input>
+                                        </div>
+                                        <div>
+                                            <button class="editBtn" id="backuserInfo">取消</button>
+                                            <button class="editBtn" type="button" id="submit">更新</button>
+                                        </div>
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- my comment -->
+        <div class="tabandIcon" id="ShowPage3" style="display: none;">
+
+            <div id="mainTab">
+                <ul class="tab-list clearfloat">
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio5" class="test-radio" name="tab2" checked="checked">
+                        <label class="test-label" for="testTabRadio5" style="display: none;">好友留言</label>
+                        <div class="tab-box">
+                            <div class="commentContainer">
+                                <div id="fullpage">
+
+
+
+
+
+                                    <div class="speech-bubble">
+
+                                        <img id="commentuserImg" src="public/images/profile1.jpg" alt="">
+                                        <span class="nick">Amy says:</span>
+
+                                        <p class="message">&nbsp;&nbsp;&nbsp;主持人很會帶領氣氛!下次還要參加!</p>
+                                        <div class="commenTitle-3">
+                                            <div id="comment_date">評論日期<span></span></div>
+                                            <button class="deleteme">刪除留言</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="speech-bubble">
+                                        <img id="commentuserImg" src="public/images/profile2.jpg" alt="">
+                                        <span class="nick">Amy says:</span>
+                                        <p class="message">&nbsp;&nbsp;&nbsp;主持人很會帶領氣氛!下次還要參加!</p>
+                                        <div class="commenTitle-3">
+                                            <div id="comment_date">評論日期</div>
+                                            <button class="deleteme">刪除留言</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="speech-bubble">
+                                        <img id="commentuserImg" src="public/images/profile3.png" alt="">
+                                        <span class="nick">Amy says:</span>
+                                        <p class="message">&nbsp;&nbsp;&nbsp;主持人很會帶領氣氛!下次還要參加!</p>
+                                        <div class="commenTitle-3">
+                                            <div id="comment_date">評論日期</div>
+                                            <button class="deleteme">刪除留言</button>
+                                        </div>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        <img id="commentuserImg" src="public/images/profile4.jpg" alt="">
+                                        <span class="nick">Amy says:</span>
+                                        <p class="message">&nbsp;&nbsp;&nbsp;主持人很會帶領氣氛!下次還要參加!</p>
+
+                                        <div class="commenTitle-3">
+                                            <div id="comment_date">評論日期</div>
+                                            <button class="deleteme">刪除留言</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- myphoto -->
+        <div class="photoOverlay" id="photoOverlay1" style="display:none">
+            <div class="photoPopup">
+                <div onclick="closephoto1()" class="closePhotoIcon">&#10006;</div>
+                <div class="photoideaBox">
+
+
+                    <div class="myPhoto">
+                        <img src="public/images/unsplash_jWv1ILisuSc (1).png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tabandIcon" id="ShowPage5" style="display: none;">
+            <div id="mainTab">
+
+                <ul class="tab-list clearfloat">
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio14" class="test-radio" name="tab5" checked="checked">
+                        <label class="test-label" for="testTabRadio14" style="display: none;">活動照片</label>
+                        <div class="tab-box">
+
+
+
+
+
+                            <div class="uploadimgBox" id="uploadimgBox" style="display: flex;">
+                                <h1>上傳照片</h1>
+                                <div class="uploadimg">
+                                    <form action="">
+                                        <input class="imgName" type="file" name="image">
+                                        <br>
+                                        <input class="uploadBtn" type="submit" value="上傳">
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <div class="privatePhotobox" id="privatePhotobox">
+                                <div class="photo-album">
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img onclick="openphoto1()" src="public/images/unsplash_jWv1ILisuSc (1).png"
+                                                alt="">
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="public/images/unsplash_jWv1ILisuSc (2).png" alt=""></img>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="public/images/unsplash_jWv1ILisuSc (3).png" alt=""></img>
+                                        </div>
+
+                                    </div>
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="public/images/unsplash_jWv1ILisuSc (4).png" alt=""></img>
+                                        </div>
+
+                                    </div>
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="public/images/unsplash_jWv1ILisuSc (5).png" alt=""></img>
+                                        </div>
+
+                                    </div>
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="public/images/unsplash_jWv1ILisuSc (6).png" alt=""></img>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="/profileedit.js"></script>
+    <script src="/iconic-multiselect-dev/dist/multi-select-min.js"></script>
+    <script src="/iconic-multiselect-dev/dist/multi-select.js"></script>
+    <script>
+        window.onload = () => {
+
+
+
+
+
+            myProfileBtn.onclick = function () {
+
+                ShowPage1.style.display = 'flex';
+                // ShowPage2.style.display = 'none';
+                ShowPage3.style.display = 'none';
+
+                ShowPage5.style.display = 'none';
+                photoOverlay1.style.display = 'none';
+
+            }
+
+            myCommentBtn.onclick = function () {
+
+                ShowPage1.style.display = 'none';
+                // ShowPage2.style.display = 'none';
+                ShowPage3.style.display = 'flex';
+
+                ShowPage5.style.display = 'none';
+                // mymessage.style.display = 'flex';
+                // frmessage.style.display = 'none';
+                photoOverlay1.style.display = 'none';
+            }
+
+
+            myPhotoBtn.onclick = function () {
+
+                ShowPage1.style.display = 'none';
+                // ShowPage2.style.display = 'none';
+                ShowPage3.style.display = 'none';
+
+                ShowPage5.style.display = 'flex';
+                photoOverlay1.style.display = 'none';
+                uploadimgBox.style.display = 'flex';
+            privatePhotobox.style.filter = ' none';
+            }
+
+            editIcon.onclick = function () {
+                userinfoPage1.style.display = 'none';
+                userinfoPage2.style.display = 'flex';
+
+            }
+
+            backuserInfo.onclick = function () {
+
+                userinfoPage1.style.display = 'flex';
+                userinfoPage2.style.display = 'none';
+                // $('html, body').animate({scrollTop: $('#userinfoPage1').offset().top - 10}, 600);
+
+            }
+
+
+
+        }
+
+
+
+
+        // 我的評論js//
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("comment_date").innerHTML = year + "/" + month + "/" + day;
+
+        // date = new Date();
+        // year = date.getFullYear();
+        // month = date.getMonth() + 1;
+        // day = date.getDate();
+        // document.getElementById("frcomment_date").innerHTML = year + "/" + month + "/" + day;
+
+
+
+
+
+        //標籤選項//
+        // $(function () {
+        //     $("#datepicker").datepicker();
+        // });
+
+        // const multiSelect = new IconicMultiSelect({
+        //     select: "#likeTab",
+        // });
+
+        // multiSelect.init();
+
+
+
+
+
+        //相簿//
+
+        function openphoto() {
+            let element = document.getElementById('photoOverlay')
+            element.style.display = 'block'
+
+        }
+
+        function closephoto() {
+            let element = document.getElementById('photoOverlay')
+            element.style.display = 'none'
+        }
+
+        function openphoto1() {
+            let element = document.getElementById('photoOverlay1')
+            element.style.display = 'block'
+            uploadimgBox.style.display = 'none';
+            privatePhotobox.style.filter = ' blur(2px)';
+
+        }
+
+        function closephoto1() {
+            let element = document.getElementById('photoOverlay1')
+            element.style.display = 'none'
+            uploadimgBox.style.display = 'flex';
+            privatePhotobox.style.filter = ' none';
+        }
+
+
+        function openphoto2() {
+            let element = document.getElementById('photoOverlay2')
+            element.style.display = 'block'
+
+        }
+
+        function closephoto2() {
+            let element = document.getElementById('photoOverlay2')
+            element.style.display = 'none'
+        }
+
+
+
+        //留言//
+
+
+
+
+
+
+
+
+
+
+
+        //編輯會員選單
+        var datas = [
+
+            { title: '台北市', value: 'TPE' },
+            { title: '新北市', value: 'NPE' },
+            { title: '桃園市', value: 'TYC' },
+            { title: '臺中市', value: 'TXG' },
+            { title: '台南市', value: 'TNN' },
+            { title: '高雄市', value: 'KHH' },
+            { title: '新竹縣', value: 'HSZ' },
+            { title: '苗栗縣', value: 'ZMI' },
+            { title: '彰化縣', value: 'CHW' },
+            { title: '南投縣', value: 'NTC' },
+            { title: '雲林縣', value: 'YUN' },
+            { title: '嘉義縣', value: 'CYC' },
+            { title: '屏東縣', value: 'PIF' },
+            { title: '宜蘭縣', value: 'ILA' },
+            { title: '花蓮縣', value: 'HUN' },
+            { title: '台東縣', value: 'TTT' },
+            { title: '澎湖縣', value: 'PEH' },
+            { title: '金門縣', value: 'KNH' },
+            { title: '連江縣', value: 'LNN' },
+            { title: '基隆市', value: 'KLU' },
+            { title: '新竹市', value: 'HSC' },
+            { title: '嘉義市', value: 'CYI' },
+        ];
+
+
+        $(function () {
+
+            datas.map(function (data) {
+                let select = (data.value === '<%=locals.CityId %>') ? "selected" : "";
+                $('#myselect').append('<option value="' + data.value + '" ' + select + '>' + data.title + '</option>');
+                // console.log(1);
+            });
+        });
+        // console.log('<%=locals.CityId %>')
+        // $('#myselect').val('<%=locals.CityId %>');
+
+
+
+
+
+        // 編輯
+
+
+
+        // function Edit(MemID) {
+        //     $.ajax({
+        //         url:  "/detail/"+MemID,
+        //         type: "GET",
+        //         success: function(res) {
+        //             var res = JSON.parse(res)
+        //             //將值傳遞進input裏頭
+        //             $("input[name='MemID']").val(res.MemID)
+        //             $("input[name='NickName']").val(res.NickName)
+        //             // $("input[name='phone']").val(res.data.phone)
+        //             // $("input[name='address']").val(res.data.address)
+        //             // $("input[name='adult_mask']").val(res.data.adult_mask)
+        //             // $("input[name='child_mask']").val(res.data.child_mask)
+        //         },
+        //         error: function() {
+        //             alert("系統錯誤!")
+        //         },
+        //     })
+        // }
+
+
+        $('#submit').on('click', function () {
+            //整理表單資料到變數
+            var data = $('#form').serializeArray()
+            JSONData = serializeToJSON(data)
+
+
+
+            $.ajax({
+                url: "/update",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: JSONData,
+                success: function (res) {
+                    location.reload();
+                    // var res = JSON.parse(res)
+                    // if (res.errno === 1) {
+                    //     alert("更新成功!")
+                    //     location.reload()
+                    // } else if (res.errno === 0) {
+                    //     alert("更新失敗!")
+                    // }
+                },
+                error: function () {
+                    alert("系統錯誤!")
+                }
+            })
+
+
+        })
+
+
+        function serializeToJSON(data) {
+            var values = {};
+            for (index in data) {
+                values[data[index].name] = data[index].value;
+            }
+            return JSON.stringify(values)
+        }
+
+
+
+
+
+
+        //假整合
+        function jump() {
+
+            window.location.assign('http://localhost:8000/activity');
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
